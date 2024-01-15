@@ -1,0 +1,63 @@
+Testowanie Oprogramowania
+Barbara Gruca
+APLIKACJA – „REZERWACJA BILETÓW DO KINA”
+
+Opis działania aplikacji:
+Aplikacja umożliwia klientowi wybór filmu z listy oraz wolnych miejsc na jednej z dwóch sali kinowych.
+Na koniec generuje bilet z danymi takimi jak: Imię, nazwisko klienta wraz z wybranym miejscem i ceną biletu.
+Jeden klient może zarezerwować dowolną ilość biletów na swoje nazwisko. Zarezerwowane miejsca 
+nie są już dostępne dla innych klientów. Bilety dzielą się na normalne i ulgowe. Z ulgi mogą skorzystać 
+tylko seniorzy w wieku powyżej 75 lat albo dzieci poniżej 15 lat.
+
+Opis klas:
+
+Klasa Film zawiera:
+ - 2 pola: filmName: string, filmDirector: string, filmArray: List<Films> - przechowują informacje
+ o filmie i tablicę z wszystkimi filmami do wyboru
+
+
+Klasa Films zawiera:
+- 1 pola: filmsList: List<Film>
+- 2 metody: 
+addFilm(filmsList: List<Film>) – dodaje film do listy filmów
+showFilms(filmsList: List<Film>) – pokazuje tablicę z filmami do wyboru użytkownikowi
+
+
+Klasa CinemaHall zawiera:
+- 3 pola: 
+hallType: string – opisuje typ hali: duża lub mała
+freeSeats: List<List<int>> - przechowuje niezarezerwowane miejsca
+reservedSeats: List<List<int>>  - przechowuje zarezerwowane miejsca
+- 3 metody: 
+DisplayAvailableSeats() – wyświetla dostępne miejsca, na początku wszystkie są dostępne
+DisplayReservedSeats() – wyświetla zarezerwowane miejsca
+
+
+Klasa Client zawiera:
+- 3 pola – name: string, surname: string, age: int – przechowują informacje o kliencie
+- 3 metody:
+ReserveSeat() – rezerwuje miejsce
+exitApp() – wychodzi z aplikacji
+selectFilm() – wybiera film
+
+ 
+ Klasa Ticket zawiera:
+- pola:
+name: string
+surname: string
+row: int
+seat: int
+filmName: string
+price: decimal
+
+-metody
+getName(): string
+getSurname(): string
+getRow(): string
+calcPrice(): int
+genreTicket() – generuje bilet, wyświetla go
+
+
+
+
+

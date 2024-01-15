@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oFtKF+wTRu7t9NHcHMPJgLXGArV3z8/mSihe7gxnSRlyScjJrTKkFbrDiEBfwMWOFURdxiq/jBhPY0Vc2oPh/g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Basia\\Desktop\\STUDIA\\SEMESTR 7\\Testowanie Oprogramowania\\232to5bgruca\\tdd\\CinemaApp\\CinemaApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Basia\\.nuget\\packages\\mstest.testadapter\\3.1.1\\mstest.testadapter.3.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
